@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    line-height: 1;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #162831;
+}
+
+input {
+    outline: none;
+}
+
+.title {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 140%;
+    text-align: center;
+}
+.page {
+    flex: 1 1 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__body {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+[class*="__container"] {
+    max-width: 1326px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+@media (max-width: 1199.98px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+        padding: 0 15px;
+    }
+}
+
+/*? -----HEADER-------------------------------- */
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.header__logo {
+}
+.header__menu {
+}
+.header__list {
+    display: flex;
+    gap: 50px;
+}
+.header__link {
+    color: #FFFFFF;
+}
+.header__link:hover {
+    text-decoration: underline;
+}
+.header__link_btn {
+    background-color: #018ABE;
+    border-radius: 3px;
+    color: #FFFFFF;
+    padding: 15px 9px;
+}
+.header__link_btn:hover {
+    background-color: #156c8f;
+}
+@media (max-width: 1199.98px) {
+    .header__body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 767.98px) {
+    .header__list{
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 30px;
+    }
+}
+
+/*? -----MAIN-------------------------------- */
+
+.page__main {
+}
+.main {
+}
+.main__container {
+}
+.main__content {
+}
+.main__subtitle {
+}
+.main__title {
+}
