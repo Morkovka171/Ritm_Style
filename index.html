@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=El+Messiri:700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2?styles=44818,44819,44822,44823,44817,44816,44820,44821,44812,44813,44814,44815,44810,44811" rel="stylesheet">
+    <link
+        href="https://fonts.cdnfonts.com/css/proxima-nova-2?styles=44818,44819,44822,44823,44817,44816,44820,44821,44812,44813,44814,44815,44810,44811"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Ritm Style</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -17,8 +21,8 @@
                     <a href="#" class="header__logo"><img src="Images/Header/logo.svg" alt="Logo"></a>
                     <nav class="header__menu">
                         <ul class="header__list">
-                            <li class="header__links"><a href="#" class="header__link">Главная</a></li>
-                            <li class="header__links"><a href="#" class="header__link">Сеансы</a></li>
+                            <li class="header__links"><a href="#main" class="header__link">Главная</a></li>
+                            <li class="header__links"><a href="#seans" class="header__link">Сеансы</a></li>
                             <li class="header__links"><a href="#" class="header__link">Отзывы</a></li>
                             <li class="header__links"><a href="#" class="header__link">Контакты</a></li>
                             <li class="header__links"><a href="#" class="header__link">Новости</a></li>
@@ -31,15 +35,33 @@
             </div>
         </header>
         <main class="page">
-            <section class="page__main main">
+            <section class="page__main main" id="main">
                 <div class="main__container">
                     <div class="main__content">
-                        <p class="main__subtitle">Укрепление здоровья</p>
+                        <h2 class="main__subtitle">Укрепление здоровья</h2>
                         <h1 class="main__title">Акватерапия RitmStyle</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="seans" id="seans">
+                <div class="seans__container">
+                    <h3 class="seans__title title">Сеансы RitmStyle</h3>
+                    <div class="seans__gallery">
+                        <div class="seans__img_wrapper image_1"><a href="#"><img src="/Images/Seans/1.jpg" alt="Seans"
+                                    class="seans__img"></a></div>
+                        <div class="seans__img_wrapper image_2"><a href="#"><img src="/Images/Seans/2.jpg" alt="Seans"
+                                    class="seans__img"></a></div>
+                        <div class="seans__img_wrapper image_3"><a href="#"><img src="/Images/Seans/3.jpg" alt="Seans"
+                                    class="seans__img"></a></div>
+                        <div class="seans__img_wrapper image_4"><a href="#"><img src="/Images/Seans/4.jpg" alt="Seans"
+                                    class="seans__img"></a></div>
+                        <div class="seans__img_wrapper image_5"><a href="#"><img src="/Images/Seans/5.jpg" alt="Seans"
+                                    class="seans__img"></a></div>
                     </div>
                 </div>
             </section>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
