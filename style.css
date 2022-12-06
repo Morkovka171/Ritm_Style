@@ -322,10 +322,29 @@ input {
     z-index: 1;
     font-family: 'El Messiri', sans-serif;
 }
-@media (max-width: 850.98px) {
+@media (max-width: 1000.98px) {
     .seans__gallery { 
+
        display: flex;
        flex-wrap: wrap;
        justify-content: center;
     }
+   
+}
+@media (max-width: 1600.98px) { 
+    .seans__link {
+    font-size: 18px;
+}
+}
+@media (max-width: 981.98px) { 
+    .seans__link {
+    font-size: 24px;
+}
+}
+@media (max-width: 467.98px) { 
+    .seans {
+        padding-bottom: 70px;
+    }
+    .seans__title {
+        padding-bottom: 70px;
 }
