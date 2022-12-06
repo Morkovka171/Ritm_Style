@@ -413,7 +413,8 @@ input {
     margin: 0 60px;
     height: 350px;
     width: 636px;
-    background-color: #018ABE;
+    
+    background-color: rgb(1,138,190, 0.4);
     border-radius: 10px;
     padding: 50px 60px;
     margin-bottom: 100px;
@@ -426,12 +427,14 @@ input {
     font-weight: 700;
     font-size: 20px;
     padding-bottom: 20px;
+    color: rgb(255,255,255, 0.4);
 }
 .slide-swiper-reviews__text {
     text-align: left;
     font-weight: 300;
     font-size: 14px;
     line-height: 140%;
+    color: rgb(255,255,255, 0.4);
 }
 .slick-dots {
    
@@ -445,4 +448,24 @@ input {
    content: "";
    background: #FFFFFF;
    border-radius: 3px;
+}
+.slick-active{
+    color: #FFFFFF;
+    background-color: #018ABE;
+}
+.slick-active>p,
+.slick-active>h3{
+    color: #FFFFFF; 
+}
+
+@media (max-width: 928.98px) { 
+    .slick-center {
+        transform: unset;
+    }
+    .slide{
+        width: 90vw;
+        height: auto;
+        padding: 30px 30px;
+        text-align: center;
+    }
 }
