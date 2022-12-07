@@ -73,14 +73,14 @@ input {
 }
 
 [class*="__container"] {
-    max-width: 67.5vw;
+    /* max-width: 67.5vw; */
+    max-width: 1200px;
     margin: 0 auto;
-    /* padding: 0px 15px; */
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
     [class*="__container"] {
-        max-width: 80vw;
+        max-width: 960px;
     }
 }
 
@@ -99,7 +99,7 @@ input {
 
 @media (max-width: 600px) {
     [class*="__container"] {
-        max-width: 95vw;
+        max-width: 570px;
     }
 }
 /*? -----HEADER-------------------------------- */
@@ -251,7 +251,7 @@ input {
     gap: 24px;
 }
 .seans__img {
-    border-radius: 12px;
+    border-radius: 24px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -317,6 +317,11 @@ input {
 @media (max-width: 981.98px) { 
     .seans__link {
     font-size: 24px;
+    top: 50%;
+    left: 50%;
+    bottom: unset;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 }
 @media (max-width: 467.98px) { 
@@ -347,9 +352,11 @@ input {
 }
 .slide {
     margin: 0 60px;
-    height: 350px;
-    width: 636px;
-    
+    /* height: 350px;
+    width: 636px; */
+    height: 276px;
+    width: 500px;
+
     background-color: rgb(1,138,190, 0.4);
     border-radius: 10px;
     padding: 50px 60px;
@@ -357,18 +364,22 @@ input {
 }
 .slick-center {
     transform: scale(1.272);
+   
+}
+.slick-center>p{
+    font-size: 10px;
 }
 
 .slide-swiper-reviews__title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     padding-bottom: 20px;
     color: rgb(255,255,255, 0.4);
 }
 .slide-swiper-reviews__text {
     text-align: left;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 140%;
     color: rgb(255,255,255, 0.4);
 }
@@ -406,6 +417,8 @@ input {
 .about {
 }
 .about__container {
+    /* max-width: 85vw; */
+    padding: 0 15px;
 }
 .about__title {
     
@@ -413,13 +426,15 @@ input {
 .about__content_body{
     display: flex;
     flex-direction: column;
-    max-width: 466px;
+    max-width: 500px;
     justify-content: center;
 }
 .about__content {
     display: flex;
     gap: 84px;
     padding-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
 }
 .about__content_title {
     font-weight: 700;
@@ -434,6 +449,7 @@ input {
 }
 .about__content_img {
     border-radius: 12px;
+    max-width: 100%;
 }
 @media (max-width: 1357.98px) { 
     .about__content {
@@ -457,4 +473,108 @@ input {
     .seans__title{
         padding-bottom: 60px;
     }
+}
+
+/*? -----PRICE-------------------------------- */
+
+.price {
+}
+.price__container {
+    padding-bottom: 150px;
+}
+.price__title {
+    padding-bottom: 100px;
+}
+.price__content_wrapper {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 134px;
+}
+.price__list {
+    display: flex;
+    gap: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+}
+.price__list_li{
+    padding-left: 50px;
+    padding-bottom: 31px;
+    line-height: 140%;
+    background: url('Images/Price/2.svg') 0px 5px no-repeat;
+}
+.price__list_ul {
+}
+.price__price_ul {
+}
+.price__list_cena {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'El Messiri';
+    padding-bottom: 33px;
+    line-height: 140%;
+}
+.price__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.price__img>img {
+    padding-bottom: 30px;
+    border-radius: 69px;
+    max-width: 100%;
+}
+.price__img_text {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 21px;
+}
+@media (max-width: 1235.98px) { 
+    .price__content_wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+}
+.price__title {
+    padding-bottom: 70px;
+}
+}
+@media (max-width: 531.98px) { 
+    .price__list {
+        gap: 50px;
+    }
+}
+@media (max-width: 424.98px) { 
+    .price__list {
+        font-size: 14px;
+        gap: 30px;
+    }
+    .price__list_cena {
+        font-size: 14px;  
+    }
+   
+        
+}
+@media (max-width: 550.98px) { 
+    .price__title {
+        padding-bottom: 51px;
+    }
+    .title {
+        font-size: 25px;
+}
+.seans__title::after {
+   right: -50px;
+   top: 10px;
+}
+.seans__title::before {
+    left: -50px;
+    top: 10px;
+}
+.about__content_title {
+    font-size: 20px;
+}
 }
