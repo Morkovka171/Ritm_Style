@@ -165,7 +165,7 @@ input {
 }
 
 .main__container {
-    background: url(/Images/Main/1.jpg) 0 0 no-repeat;
+    background: url('Images/Main/1.jpg') 0 0 no-repeat;
     background-position: center;
     background-size: cover;
     height: 600px;
